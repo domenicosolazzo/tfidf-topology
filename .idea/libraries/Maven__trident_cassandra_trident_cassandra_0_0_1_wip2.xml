@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: trident-cassandra:trident-cassandra:0.0.1-wip2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/trident-cassandra/trident-cassandra/0.0.1-wip2/trident-cassandra-0.0.1-wip2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/trident-cassandra/trident-cassandra/0.0.1-wip2/trident-cassandra-0.0.1-wip2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/trident-cassandra/trident-cassandra/0.0.1-wip2/trident-cassandra-0.0.1-wip2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
