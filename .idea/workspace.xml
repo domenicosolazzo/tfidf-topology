@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -90,13 +90,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublishURLBolt.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PublishURLBolt.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="746" selection-end="746" vertical-scroll-proportion="0.55785125">
+            <state line="27" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TfidfTopologyFields.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2892562">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/jvm/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/spout/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
       </list>
     </option>
   </component>
@@ -521,10 +531,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="746" selection-end="746" vertical-scroll-proportion="0.55785125">
+        <state line="27" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2892562">
+          <folding />
         </state>
       </provider>
     </entry>
