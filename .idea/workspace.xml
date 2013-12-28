@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java" />
     </list>
     <ignored path="tfidf-topology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +17,7 @@
     <file path="/OuterJoinReducer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259388815" ignored="false" />
     <file path="/PersistDocumentFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388261940901" ignored="false" />
     <file path="/SplitAndProjectToFields.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388262267250" ignored="false" />
+    <file path="/TermFilter.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388263088724" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,17 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TwitterSpout.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/spout/TwitterSpout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="35" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PublishURLBolt.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,13 +108,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplitAndProjectToFields.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SplitAndProjectToFields.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.2347084">
+            <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#246#273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermFilter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="1.5362731">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/Conf.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/storm/cookbook/tfidf/bolt/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/storm/cookbook/tfidf/spout/TwitterSpout.java" />
@@ -223,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java" />
       </list>
     </option>
   </component>
@@ -656,10 +656,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.2347084">
+        <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#246#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="1.5362731">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
