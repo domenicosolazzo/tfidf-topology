@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,6 +13,7 @@
     <file path="/fragment.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388067941150" ignored="false" />
     <file path="/PublishURLBolt.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388089250296" ignored="false" />
     <file path="/DocumentFetchFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258490749" ignored="false" />
+    <file path="/DocumentTokenizer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258700656" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,13 +112,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentFetchFunction.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DocumentFetchFunction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="70" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.8057851">
+            <state line="52" column="29" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1372#1388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentTokenizer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.9146515">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java" />
       </list>
     </option>
   </component>
@@ -525,6 +539,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="29" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1372#1388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
@@ -532,12 +556,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="70" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.8057851">
+        <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.9146515">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1372#1388#0" expanded="true" />
           </folding>
         </state>
       </provider>
