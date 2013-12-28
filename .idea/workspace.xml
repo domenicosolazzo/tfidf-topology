@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
     </list>
     <ignored path="tfidf-topology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,6 +11,7 @@
     <file path="/pom.xml" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388067206444" ignored="false" />
     <file path="/fragment.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388067941150" ignored="false" />
     <file path="/PublishURLBolt.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388089250296" ignored="false" />
+    <file path="/DocumentFetchFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388257878898" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +101,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TfidfTopologyFields.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TfidfTopologyFields.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2892562">
+            <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentFetchFunction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="8" selection-start="365" selection-end="365" vertical-scroll-proportion="0.24793388">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/spout/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
       </list>
     </option>
   </component>
@@ -263,33 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfidf-topology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfidf-topology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfidf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bolt" />
+              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,8 +526,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2892562">
+        <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="8" selection-start="365" selection-end="365" vertical-scroll-proportion="0.24793388">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
