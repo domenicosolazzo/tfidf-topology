@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -17,6 +17,7 @@
     <file path="/BatchCombiner.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259072312" ignored="false" />
     <file path="/OuterJoinReducer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259388815" ignored="false" />
     <file path="/PersistDocumentFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388261940901" ignored="false" />
+    <file path="/SplitAndProjectToFields.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388262267250" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +119,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SplitAndProjectToFields.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.2347084">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#246#273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DocumentTokenizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,10 +164,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistDocumentFunction.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PersistDocumentFunction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="30" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.27453768">
+            <state line="47" column="16" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1346#1361#0" expanded="true" />
@@ -172,15 +185,6 @@
                 <element signature="e#443#467#0" expanded="true" />
                 <element signature="e#1499#1507#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="36" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -218,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java" />
       </list>
     </option>
   </component>
@@ -584,16 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1372#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
@@ -641,10 +636,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="30" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.27453768">
+        <state line="47" column="16" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1346#1361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="29" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1372#1388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="287" selection-end="310" vertical-scroll-proportion="0.2347084">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#246#273#0" expanded="true" />
           </folding>
         </state>
       </provider>
