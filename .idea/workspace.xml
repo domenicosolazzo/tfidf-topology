@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -14,6 +14,7 @@
     <file path="/PublishURLBolt.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388089250296" ignored="false" />
     <file path="/DocumentFetchFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258490749" ignored="false" />
     <file path="/DocumentTokenizer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258700656" ignored="false" />
+    <file path="/BatchCombiner.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259072312" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,10 +125,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentTokenizer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DocumentTokenizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.9146515">
+            <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BatchCombiner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.44807965">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java" />
       </list>
     </option>
   </component>
@@ -558,7 +571,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.9146515">
+        <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.44807965">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
