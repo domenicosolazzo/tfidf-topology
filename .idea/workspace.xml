@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -17,6 +16,7 @@
     <file path="/DocumentTokenizer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258700656" ignored="false" />
     <file path="/BatchCombiner.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259072312" ignored="false" />
     <file path="/OuterJoinReducer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259388815" ignored="false" />
+    <file path="/PersistDocumentFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388261940901" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +75,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conf.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/Conf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="3" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TwitterSpout.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/spout/TwitterSpout.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,12 +140,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OuterJoinReducer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OuterJoinReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.95732576">
+            <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersistDocumentFunction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="30" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.27453768">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1346#1361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
       </list>
     </option>
   </component>
@@ -628,9 +632,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.95732576">
+        <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="30" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.27453768">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1346#1361#0" expanded="true" />
           </folding>
         </state>
       </provider>
