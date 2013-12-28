@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -15,6 +16,7 @@
     <file path="/DocumentFetchFunction.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258490749" ignored="false" />
     <file path="/DocumentTokenizer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388258700656" ignored="false" />
     <file path="/BatchCombiner.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259072312" ignored="false" />
+    <file path="/OuterJoinReducer.java" changelist="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" time="1388259388815" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,12 +138,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BatchCombiner.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BatchCombiner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.44807965">
+            <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OuterJoinReducer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.95732576">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OuterJoinState.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="63" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#443#467#0" expanded="true" />
+                <element signature="e#1499#1507#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,6 +212,8 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java" />
       </list>
     </option>
   </component>
@@ -580,7 +608,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/BatchCombiner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.44807965">
+        <state line="21" column="43" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="63" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#467#0" expanded="true" />
+            <element signature="e#1499#1507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/OuterJoinReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="1" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.95732576">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
