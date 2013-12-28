@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TfidfExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,26 +78,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PublishURLBolt.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TfidfTopologyFields.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DocumentFetchFunction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentFetchFunction.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,13 +102,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TermFilter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TermFilter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="1.5362731">
+            <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TfidfExpression.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TfidfExpression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docs.csv" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="56" selection-start="509" selection-end="509" vertical-scroll-proportion="0.10869565">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,8 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TwitterSpout.java" />
-        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/storm/cookbook/tfidf/bolt/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/storm/cookbook/tfidf/spout/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/jvm/TwitterSpout.java" />
@@ -223,6 +223,8 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/PersistDocumentFunction.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/SplitAndProjectToFields.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TfidfExpression.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv" />
       </list>
     </option>
   </component>
@@ -666,10 +668,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TermFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="1.5362731">
+        <state line="72" column="5" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TfidfExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="56" selection-start="509" selection-end="509" vertical-scroll-proportion="0.10869565">
+          <folding />
         </state>
       </provider>
     </entry>
