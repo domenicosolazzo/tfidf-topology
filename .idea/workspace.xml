@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071e9de4-27d2-4b08-b8b6-37c8dc4631d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/StateUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/TfIdfUpdater.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfidf-topology.iws" />
@@ -89,12 +89,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StateUtils.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StateUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/StateUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.10638298">
+            <state line="5" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TfIdfUpdater.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/TfIdfUpdater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="1" selection-start="1502" selection-end="1502" vertical-scroll-proportion="1.0212766">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#372#401#0" expanded="true" />
+                <element signature="e#766#780#0" expanded="true" />
+                <element signature="e#834#848#0" expanded="true" />
+                <element signature="e#936#944#0" expanded="true" />
+                <element signature="e#990#998#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,15 +147,6 @@
         <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="56" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentTokenizer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="13" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/jvm/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/spout/TwitterSpout.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/bolt/PublishURLBolt.java" />
@@ -206,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/TfidfExpression.java" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/docs.csv" />
         <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/StateUtils.java" />
+        <option value="$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/TfIdfUpdater.java" />
       </list>
     </option>
   </component>
@@ -566,11 +573,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/Conf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="36" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.0">
@@ -590,7 +592,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/TfidfTopologyFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" />
+        <state line="14" column="56" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/functions/DocumentTokenizer.java">
@@ -668,9 +672,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/StateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.10638298">
+        <state line="5" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvm/storm/cookbook/tfidf/state/TfIdfUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="1" selection-start="1502" selection-end="1502" vertical-scroll-proportion="1.0212766">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#401#0" expanded="true" />
+            <element signature="e#766#780#0" expanded="true" />
+            <element signature="e#834#848#0" expanded="true" />
+            <element signature="e#936#944#0" expanded="true" />
+            <element signature="e#990#998#0" expanded="true" />
           </folding>
         </state>
       </provider>
